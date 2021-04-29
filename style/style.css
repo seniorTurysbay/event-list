@@ -2,6 +2,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -92,6 +100,7 @@
 
 .event-calendar-and-list-and-boxes {
   display: flex;
+  position: relative;
 }
 
 .event-calendar {
@@ -141,8 +150,66 @@
   width: 17px;
 }
 
+.my-event {
+  padding: 28px 0 6px 32px;
+  width: 100%;
+}
+.my-event__title {
+  margin-bottom: 24px;
+}
+.my-event__title {
+  display: flex;
+}
+.my-event__status {
+  display: flex;
+  margin-left: 47px;
+}
+.my-event__status-item {
+  display: flex;
+  padding-bottom: 6px;
+  width: 156px;
+  justify-content: center;
+}
+.my-event__status-item:hover {
+  border-bottom: 2px solid #3F4551;
+}
+.my-event__status-item .title {
+  font-size: 15px;
+  color: #3F4551;
+}
+.my-event__status-item .circle {
+  width: 32px;
+  height: 22px;
+  margin-left: 6px;
+  background-color: #E9ECF5;
+  border-radius: 15px;
+  color: #727E8E;
+  font-size: 13px;
+  padding: 2px 11px;
+}
+
+.calendar {
+  width: 955px;
+}
+
 .list {
+  height: 400px !important;
   margin-left: 18px;
+  width: 955px;
+  overflow-y: auto;
+}
+.list::-webkit-scrollbar {
+  height: auto;
+  width: 5px;
+}
+.list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.list::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.list::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 .list__item {
   width: 955px !important;
@@ -257,6 +324,31 @@
 .ad-boxes__big {
   height: 345px;
   padding-top: 147px;
+}
+
+.chatbot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #202531;
+  border-radius: 100%;
+  position: absolute;
+  top: 420px;
+  right: 16px;
+}
+
+.active__d-flex {
+  display: flex;
+}
+
+.active__d-block {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 1024px) {

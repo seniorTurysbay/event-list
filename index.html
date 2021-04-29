@@ -19,7 +19,7 @@
 
 <div class="sidebar">
     <div class="sidebar__circle">
-        <button type="button"><img src="img/sidebarHome.png" alt="home-icon"></button>
+        <button type="button"><img src="img/sidebarHome.png" alt="home-icon"/></button>
     </div>
     <div class="sidebar__circle">
         <button type="button">
@@ -36,18 +36,18 @@
     <div class="header">
         <div class="header__block">
             <div class="header__block__icon">
-                <img src="img/calendar.png" alt="calendar-icon">
+                <img src="img/calendar.png" alt="calendar-icon"/>
             </div>
-            <div class="header__block__title">Event календарь</div>
+            <a class="header__block__title eventCalendar">Event календарь</a>
         </div>
         <div class="header__block">
             <div class="header__block__icon">
-                <img src="img/favourite.png" alt="favourite-icon">
+                <img src="img/favourite.png" alt="favourite-icon"/>
             </div>
-            <div class="header__block__title">Мои мероприятия</div>
+            <a class="header__block__title myEvents">Мои мероприятия</a>
         </div>
         <div class="header__notification-icon">
-            <img src="img/alarm.png" alt="alarm-icon">
+            <img src="img/alarm.png" alt="alarm-icon"/>
         </div>
         <div class="header__vert-border"></div>
         <div class="header__user">
@@ -56,15 +56,15 @@
                 <div class="header__user__descr__job">Писатель</div>
             </div>
             <div class="header__user__photo">
-                <img src="img/headerCircle.png" alt="userphoto">
+                <img src="img/headerCircle.png" alt="userphoto"/>
             </div>
-            <button class="header__user__down-btn"><img src="img/headerDownBtn.png" alt=""></button>
+            <button class="header__user__down-btn"><img src="img/headerDownBtn.png" alt="down-btn"/></button>
         </div>
     </div>
     <div class="event-calendar-and-list-and-boxes">
-        <div class="event-calendar-and-list">
+        <div class="event-calendar-and-list active__d-block">
             <div class="event-calendar">
-                <div class="event-calendar__title">Event Календарь</div>
+                <div class="event-calendar__title active__d-flex">Event Календарь</div>
                 <div class="event-calendar__search">
                     <form action="#">
                         <input type="text" placeholder="Поиск мероприятия">
@@ -72,10 +72,25 @@
                     </form>
                 </div>
                 <div class="event-calendar__sort">
-                    <button type="submit"><i class="fa fa-bars"></i></button>
-                    <button type="submit"><img src="img/calendar-border-all-solid.svg" alt=""></button>
+                    <button type="button" class="listBtn"><i class="fa fa-bars"></i></button>
+                    <button type="button" class="calendarBtn"><img src="img/calendar-border-all-solid.svg" alt=""/>
+                    </button>
                 </div>
             </div>
+            <div class="my-event hidden">
+                <div class="my-event event-calendar__title">Мои мероприятия</div>
+                <div class="my-event__status">
+                    <div class="my-event__status-item">
+                        <a class="title relevantEvents">Актуальные</a>
+                        <div class="circle">4</div>
+                    </div>
+                    <div class="my-event__status-item">
+                        <a class="title pastEvents">Прошедшие</a>
+                        <div class="circle">6</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="list">
                 <div class="list__item">
                     <div class="list__item__inner">
@@ -103,7 +118,7 @@
                             </div>
                         </div>
                         <div class="list__item__inner__photo">
-                            <img src="img/mainContent.png" alt="">
+                            <img src="img/mainContent.png" alt=""/>
                         </div>
                     </div>
                     <div class="choosen-month">Февраль 2021</div>
@@ -131,7 +146,7 @@
                             </div>
                         </div>
                         <div class="list__item__inner__photo">
-                            <img src="img/mainContent-2.png" alt="">
+                            <img src="img/mainContent-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="list__item__inner">
@@ -159,7 +174,7 @@
                             </div>
                         </div>
                         <div class="list__item__inner__photo">
-                            <img src="img/mainContent.png" alt="">
+                            <img src="img/mainContent.png" alt=""/>
                         </div>
                     </div>
                     <div class="choosen-month">Январь 2021</div>
@@ -180,11 +195,12 @@
                                 </div>
                             </div>
                             <div class="list__item__inner__main__text">
-                                Виртуальное пространство выставки позволяет собрать в одном месте экспонентов практически всех востребованных видов деятельности.
+                                Виртуальное пространство выставки позволяет собрать в одном месте экспонентов
+                                практически всех востребованных видов деятельности.
                             </div>
                         </div>
                         <div class="list__item__inner__photo">
-                            <img src="img/mainContent-3.png" alt="">
+                            <img src="img/mainContent-3.png" alt=""/>
                         </div>
                     </div>
                 </div>
@@ -204,8 +220,15 @@
                 <p class="ad-boxes__small__descr">Место для вашей рекламы</p>
             </div>
         </div>
+        <div class="calendar hidden">
+
+        </div>
+        <div class="chatbot">
+            <img src="img/chatbotImg.png" alt="chatbot-img">
+        </div>
     </div>
 </div>
 
+<script src="js/main.js"></script>
 </body>
 </html>
