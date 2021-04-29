@@ -1,0 +1,97 @@
+@media (max-width: 1024px)
+  .header
+    padding: 24px 0 24px 20px
+    width: 960px
+    &__block
+      &__title
+        margin-left: 9px
+
+  .event-calendar-and-list-and-boxes
+    display: block
+  .list
+    margin-left: 10px
+  .ad-boxes
+    display: none
+@media screen and (max-width: 768px)
+  .sidebar
+    display: flex
+    position: fixed
+    height: 64px
+    width: 100%
+    bottom: 0
+    top: unset
+    left: unset
+    opacity: 1
+    z-index: 10
+  .right-content
+    position: unset
+    left: unset
+  .header
+    padding: 4px 0
+    width: inherit
+    margin-bottom: 24px
+    &__notification-icon
+      margin: 0 35px 0 100px!important
+    &__block
+      &__title
+        margin-left: 3px
+      &__icon
+        margin-right: 3px
+  .event-calendar
+    margin: 0
+    &__title
+      font-size: 20px
+    &__search
+      width: 400px
+      form
+        input[type="text"]
+          width: 330px
+    &__sort
+      display: flex
+      position: absolute
+      right: 0
+.list
+  margin-top: 24px
+  &__item
+    width: 768px
+    &__inner
+      &__photo
+        //display: none
+@media screen and (max-width: 320px)
+  body
+    width: 100%
+  .header
+    width: inherit
+    flex-wrap: wrap
+    &__block
+      margin: 12px 0 12px 0
+    &__notification-icon
+      display: none
+    &__vert-border
+      display: none
+  .event-calendar
+    flex-direction: column
+    //justify-content: center
+    align-items: center
+    &__search
+      width: 300px
+      form
+        input[type="text"]
+          width: 230px
+  .list
+    margin: 0
+
+    &__item
+      width: 320px
+      &__inner
+        width: 320px
+        padding: 12px 0
+        //display: flex
+        //flex-direction: row
+        &__main
+          &__status
+            display: block
+            &__title
+              width: 250px
+          &__text
+            width: 220px
