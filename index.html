@@ -81,11 +81,11 @@
                 <div class="my-event event-calendar__title">Мои мероприятия</div>
                 <div class="my-event__status">
                     <div class="my-event__status-item">
-                        <a class="title relevantEvents">Актуальные</a>
+                        <a class="title" id="relevantEvents">Актуальные</a>
                         <div class="circle">4</div>
                     </div>
                     <div class="my-event__status-item">
-                        <a class="title pastEvents">Прошедшие</a>
+                        <a class="title" id="pastEvents">Прошедшие</a>
                         <div class="circle">6</div>
                     </div>
                 </div>
@@ -204,6 +204,18 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="list__interface hidden">
+                    <div class="list__interface-img">
+                        <img src="img/interface.png" alt="interface-img">
+                    </div>
+                    <div class="list__interface-title">
+                        Нет актуальных мероприятий
+                    </div>
+                    <div class="list__interface-descr">
+                        У вас нет мероприятий запланированных на ближайщее время, вы можете найти подходящее в Event календаре
+                    </div>
+                </div>
             </div>
         </div>
         <div class="ad-boxes">
@@ -220,9 +232,7 @@
                 <p class="ad-boxes__small__descr">Место для вашей рекламы</p>
             </div>
         </div>
-        <div class="calendar hidden">
-
-        </div>
+        <div class="calendar hidden"></div>
         <div class="chatbot">
             <img src="img/chatbotImg.png" alt="chatbot-img">
         </div>
